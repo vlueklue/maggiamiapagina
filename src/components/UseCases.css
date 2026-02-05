@@ -1,5 +1,9 @@
 .use-cases-section {
-    background: #fff;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)), url('../assets/use-cases-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .use-cases-grid {
