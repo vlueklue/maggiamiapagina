@@ -2,87 +2,79 @@
     background-color: #fff;
 }
 
-.steps-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    max-width: 900px;
-    margin: 0 auto;
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
 
-.step-item {
+.step-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+    border-top: 5px solid var(--step-color);
+    transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    background: var(--step-color);
+    color: white;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 4rem;
-}
-
-.step-item.reverse {
-    flex-direction: row-reverse;
-}
-
-.step-content {
-    flex: 1;
-    position: relative;
-}
-
-.step-number {
-    font-family: var(--font-heading);
-    font-size: 4rem;
-    font-weight: 900;
-    color: var(--color-primary);
-    opacity: 0.3;
+    justify-content: center;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
     position: absolute;
-    top: -2.5rem;
-    left: -2rem;
-    z-index: -1;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.step-content h3 {
-    font-size: 1.8rem;
+.step-icon {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.step-card h3 {
     margin-bottom: 1rem;
     color: var(--color-text-main);
 }
 
-.step-visual {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+.step-card p {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
-.visual-placeholder {
-    width: 100%;
-    padding-bottom: 75%;
-    /* 4:3 Aspect Ratio */
-    background: linear-gradient(135deg, #edf2fb 0%, #e2eafc 100%);
-    border-radius: 20px;
-    border: 2px dashed var(--color-secondary);
-    position: relative;
-    overflow: hidden;
+.time-note {
+    font-size: 1.2rem;
+    color: var(--color-text-main);
+    margin-top: 3rem;
 }
 
-.visual-placeholder::before {
-    content: "✨";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
+.time-note strong {
+    color: #ff9f1c;
 }
 
-@media (max-width: 768px) {
-
-    .step-item,
-    .step-item.reverse {
-        flex-direction: column;
-        text-align: center;
-        gap: 2rem;
+@media (max-width: 992px) {
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    .step-number {
-        position: static;
-        display: block;
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-        opacity: 1;
+@media (max-width: 576px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
     }
 }

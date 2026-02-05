@@ -7,7 +7,7 @@ const Solution = () => {
         <section className="section solution-section">
             <div className="container">
                 <div className="text-center mb-lg">
-                    <h2>Presentamos MaggiaMia: La app de cuentos donde tu hijo es la estrella</h2>
+                    <h2>MaggiaMia</h2>
                     <p className="subtitle">
                         MaggiaMia transforma la lectura en una aventura personal. En menos de 2 minutos, creas cuentos completamente personalizados donde tu hijo es el protagonista, aprende valores que tú eliges, y vive historias que querrá escuchar una y otra vez.
                     </p>

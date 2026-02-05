@@ -1,44 +1,46 @@
 .problem-section {
     background-color: #fff0f3;
-    /* Very soft pink/red tint for "problem" awareness */
-    position: relative;
-    overflow: hidden;
-}
-
-.problem-content {
-    max-width: 800px;
-    margin: 0 auto;
+    /* Light pink bg */
 }
 
 .problem-header h2 {
-    font-size: 2.5rem;
-    color: var(--color-text-main);
+    color: #590d22;
     margin-bottom: 2rem;
 }
 
 .problem-body p {
-    font-size: 1.2rem;
-    color: var(--color-text-light);
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
+    color: #4a4e69;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.problem-callout {
+    background: white;
+    border-left: 5px solid #ff4d6d;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    text-align: left;
 }
 
 .problem-stat {
-    background: rgba(255, 255, 255, 0.6);
-    padding: 1.5rem;
-    border-radius: 12px;
-    border-left: 4px solid #ff9a9e;
-    margin: 2rem 0;
+    margin-bottom: 0 !important;
+    color: #590d22 !important;
 }
 
 .problem-stat strong {
-    color: #d64045;
-    /* Alert color but soft */
+    color: #c9184a;
 }
 
 .problem-question {
+    font-size: 1.3rem !important;
     font-weight: 700;
-    color: var(--color-text-main);
-    font-size: 1.4rem !important;
-    margin-top: 2rem;
+    color: #003049 !important;
+    margin-top: 3rem;
 }

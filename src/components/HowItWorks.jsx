@@ -1,17 +1,15 @@
 import React from 'react';
+import { Lightbulb, UserPen, Heart, BookOpen } from 'lucide-react';
 import './HowItWorks.css';
 
-const Step = ({ number, title, description, reverse }) => (
-    <div className={`step-item ${reverse ? 'reverse' : ''}`}>
-        <div className="step-content">
-            <div className="step-number">{number}</div>
-            <h3>{title}</h3>
-            <p>{description}</p>
+const StepCard = ({ number, title, description, icon: Icon, color }) => (
+    <div className="step-card" style={{ '--step-color': color }}>
+        <div className="step-circle">{number}</div>
+        <div className="step-icon">
+            <Icon size={40} color={color} />
         </div>
-        <div className="step-visual">
-            {/* Placeholder for visual or illustration */}
-            <div className="visual-placeholder"></div>
-        </div>
+        <h3>{title}</h3>
+        <p>{description}</p>
     </div>
 );
 
@@ -20,33 +18,43 @@ const HowItWorks = () => {
         <section className="section how-it-works" id="how-it-works">
             <div className="container">
                 <div className="text-center mb-lg">
-                    <h2>Tu Aventura en 4 Pasos</h2>
-                    <p className="subtitle">Así de fácil crean magia nuestros pequeños magos.</p>
+                    <h2>¿Cómo Funciona?</h2>
+                    <p className="subtitle">4 pasos simples para crear magia</p>
                 </div>
 
-                <div className="steps-container">
-                    <Step
+                <div className="steps-grid">
+                    <StepCard
                         number="1"
-                        title="Crea tu idea"
-                        description="Escribe lo que quieras contar o elige de nuestra biblioteca con cientos de historias listas para personalizar."
+                        title="Crear Idea"
+                        description="Escribe tu propia idea o elige de nuestra biblioteca de historias disponibles."
+                        icon={Lightbulb}
+                        color="#ffadad" /* Soft Red/Orange */
                     />
-                    <Step
+                    <StepCard
                         number="2"
-                        title="Personaliza"
-                        description="Añade el nombre de tu hijo, su edad, apariencia y características especiales. Aquí es donde la magia comienza."
-                        reverse={true}
+                        title="Personalizar"
+                        description="Añade el nombre del niño, su apariencia, edad y características especiales."
+                        icon={UserPen}
+                        color="#a0c4ff" /* Soft Blue */
                     />
-                    <Step
+                    <StepCard
                         number="3"
-                        title="Elige valores"
-                        description="Selecciona qué quieres que aprenda: valentía, amistad, honestidad, perseverancia... Tú decides el mensaje."
+                        title="Valores"
+                        description="Selecciona los valores educativos y temas que quieres transmitir."
+                        icon={Heart}
+                        color="#ffd6a5" /* Soft Yellow */
                     />
-                    <Step
+                    <StepCard
                         number="4"
-                        title="¡Disfruta!"
-                        description="En segundos tendrás un cuento ilustrado único. Léelo juntos, escúchalo como audiocuento o imprímelo."
-                        reverse={true}
+                        title="¡Disfrutar!"
+                        description="Genera y disfruta tu cuento ilustrado único en segundos."
+                        icon={BookOpen}
+                        color="#fdffb6" /* Another Soft Yellow/Orange */
                     />
+                </div>
+
+                <div className="time-note text-center mt-lg">
+                    <p>⏱️ ¡Todo el proceso toma menos de <strong>2 minutos</strong>!</p>
                 </div>
             </div>
         </section>
