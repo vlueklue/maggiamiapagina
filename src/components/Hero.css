@@ -21,9 +21,8 @@
     font-size: 3.5rem;
     line-height: 1.2;
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #2d3142 0%, #4f5d75 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #4a1d96;
+    /* Darker Purple for contrast */
 }
 
 .hero-text p {

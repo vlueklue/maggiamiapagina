@@ -43,7 +43,8 @@
 body {
   font-family: var(--font-body);
   color: var(--color-text-main);
-  background: linear-gradient(135deg, #e2eafc 0%, #edf2fb 100%);
+  background: linear-gradient(135deg, #f3e8ff 0%, #e0c3fc 100%);
+  /* Light Lilac Gradient */
   line-height: 1.6;
   overflow-x: hidden;
 }
