@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Palette, Volume2, ShieldCheck, Zap, Star } from 'lucide-react';
+import { BookOpen, Palette, Volume2, ShieldCheck, Zap, Star, User, Clock } from 'lucide-react';
 import './Features.css';
 
 const FeatureCard = ({ icon: Icon, title, description, color }) => (
@@ -14,6 +14,18 @@ const FeatureCard = ({ icon: Icon, title, description, color }) => (
 
 const Features = () => {
     const features = [
+        {
+            icon: User,
+            title: "Personalización Total",
+            description: "El nombre, apariencia y características de tu hijo son el corazón de cada historia. Así se verá reflejado y conectará profundamente con la lectura.",
+            color: "#ffadad" /* Soft Red */
+        },
+        {
+            icon: Zap,
+            title: "Rápido y Fácil",
+            description: "En 2 minutos pasas de una idea a un cuento ilustrado completo. Sin complicaciones, sin horas de preparación. Solo magia instantánea.",
+            color: "#cb997e" /* Muted Earthy? or #fee440 (Yellow) from palette */
+        },
         {
             icon: BookOpen,
             title: "Cuentos Ilustrados",
@@ -39,7 +51,7 @@ const Features = () => {
             color: "#fdffb6"
         },
         {
-            icon: Zap,
+            icon: Clock, /* Changed from Zap to avoid duplicate */
             title: "Adaptado por Edad",
             description: "Contenido diseñado específicamente para edades 3-10 años con lenguaje y trama apropiados.",
             color: "#caffbf"
