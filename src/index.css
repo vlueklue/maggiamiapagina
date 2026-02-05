@@ -1,0 +1,88 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@300;400;700;900&display=swap');
+
+:root {
+  /* Pastel Palette */
+  --color-primary: #a0c4ff; /* Soft Blue */
+  --color-secondary: #bdb2ff; /* Soft Lilac */
+  --color-accent: #ffc6ff; /* Soft Pink */
+  --color-highlight: #fdffb6; /* Soft Yellow */
+  --color-text-main: #2d3142; /* Darker Slate */
+  --color-text-light: #4f5d75;
+  --color-white: #ffffff;
+  --color-glass: rgba(255, 255, 255, 0.7);
+
+  /* Fonts */
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Shadows */
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-main);
+  background: linear-gradient(135deg, #e2eafc 0%, #edf2fb 100%);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.glass-card {
+  background: var(--color-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: var(--shadow-card);
+}

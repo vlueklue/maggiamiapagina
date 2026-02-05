@@ -1,0 +1,162 @@
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+}
+
+.toggle-btn {
+    width: 60px;
+    height: 32px;
+    background: #dbdbdb;
+    border-radius: 50px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+    background: var(--color-secondary);
+}
+
+.toggle-circle {
+    width: 26px;
+    height: 26px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.toggle-btn.active .toggle-circle {
+    left: 31px;
+}
+
+.toggle-container span.active {
+    color: var(--color-text-main);
+}
+
+.save-tag {
+    background: var(--color-highlight);
+    color: #b5a500;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.5rem;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-soft);
+    width: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card.highlighted {
+    border: 2px solid var(--color-secondary);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-card);
+}
+
+.popular-tag {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-secondary);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.pricing-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: 2rem;
+    font-family: var(--font-heading);
+}
+
+.currency {
+    font-size: 1.5rem;
+    vertical-align: top;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+.period {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    font-weight: 400;
+}
+
+.pricing-features {
+    list-style: none;
+    margin-bottom: 2.5rem;
+    flex: 1;
+}
+
+.pricing-features li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--color-text-light);
+}
+
+.check-icon {
+    color: var(--color-secondary);
+    flex-shrink: 0;
+}
+
+.btn-pricing {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-highlight {
+    background: var(--color-text-main);
+    color: white;
+}
+
+.btn-highlight:hover {
+    background: var(--color-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #e9ecef;
+    color: var(--color-text-main);
+}
+
+.btn-outline:hover {
+    border-color: var(--color-text-main);
+}
