@@ -7,14 +7,16 @@ const Hero = () => {
         <section className="hero" id="hero">
             <div className="container hero-content">
                 <div className="hero-text">
-                    <h1>Descubre la Magia de Aprender</h1>
+                    <h1>Donde cada niño es el protagonista de su propia historia mágica</h1>
                     <p>
-                        MaggiaMia transforma el aprendizaje en una aventura mágica.
-                        Donde la curiosidad se encuentra con la creatividad.
+                        Crea cuentos infantiles únicos y personalizados en minutos. Tu hijo será el héroe, aprenderá valores importantes y querrá leer una y otra vez.
                     </p>
                     <div className="hero-actions">
-                        <button className="btn-primary">Empieza Ahora</button>
-                        <button className="btn-secondary">Saber Más</button>
+                        <button className="btn-primary">Comienza tu prueba gratuita de 7 días</button>
+                        <button className="btn-secondary">Descarga gratis en Stores</button>
+                    </div>
+                    <div className="hero-social-proof">
+                        <p>✨ Más de 50,000 familias creando momentos mágicos • 200,000+ cuentos personalizados • Calificación 4.8/5 estrellas</p>
                     </div>
                 </div>
                 <div className="hero-image">

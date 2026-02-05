@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Palette, Volume2, ShieldCheck } from 'lucide-react';
+import { BookOpen, Palette, Volume2, ShieldCheck, Zap, Star } from 'lucide-react';
 import './Features.css';
 
 const FeatureCard = ({ icon: Icon, title, description, color }) => (
@@ -16,27 +16,39 @@ const Features = () => {
     const features = [
         {
             icon: BookOpen,
-            title: "Historias Personalizadas",
-            description: "Cuentos donde tu hijo es el protagonista, adaptados a sus gustos y nivel de lectura.",
+            title: "Cuentos Ilustrados",
+            description: "Historias completas con ilustraciones mágicas diseñadas específicamente para cada cuento.",
             color: "#a0c4ff"
         },
         {
-            icon: Palette,
-            title: "Ilustraciones Mágicas",
-            description: "Arte visual generado con IA que trae cada palabra a la vida con colores vibrantes.",
-            color: "#ffc6ff"
-        },
-        {
             icon: Volume2,
-            title: "Narración de Voz",
-            description: "Voces cálidas y expresivas que leen las historias para una experiencia inmersiva.",
+            title: "Audiocuentos",
+            description: "Escucha las historias sin pantallas. Perfecto para la hora de dormir o momentos de calma.",
             color: "#bdb2ff"
         },
         {
+            icon: Palette,
+            title: "Biblioteca Personal",
+            description: "Todos tus cuentos guardados en un solo lugar. Accede cuando quieras, donde quieras.",
+            color: "#ffc6ff"
+        },
+        {
             icon: ShieldCheck,
-            title: "Seguro y Privado",
-            description: "Un entorno 100% seguro, sin anuncios y enfocado únicamente en aprender.",
+            title: "Impresión PDF",
+            description: "Descarga e imprime los cuentos para leerlos abrazados, como antes, como siempre.",
             color: "#fdffb6"
+        },
+        {
+            icon: Zap,
+            title: "Adaptado por Edad",
+            description: "Contenido diseñado específicamente para edades 3-10 años con lenguaje y trama apropiados.",
+            color: "#caffbf"
+        },
+        {
+            icon: Star,
+            title: "Valores Educativos",
+            description: "Elige entre más de 15 valores diferentes para tejer en cada historia: empatía, coraje, etc.",
+            color: "#ffd6a5"
         }
     ];
 
@@ -44,8 +56,7 @@ const Features = () => {
         <section className="section features-section" id="features">
             <div className="container">
                 <div className="text-center mb-lg">
-                    <h2>Por qué los padres aman MaggiaMia</h2>
-                    <p className="subtitle">Herramientas diseñadas para potenciar la imaginación.</p>
+                    <h2>Todo lo que necesitas para crear momentos inolvidables</h2>
                 </div>
                 <div className="features-grid">
                     {features.map((feature, index) => (

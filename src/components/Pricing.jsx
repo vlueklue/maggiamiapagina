@@ -31,8 +31,8 @@ const Pricing = () => {
         <section className="section pricing" id="pricing">
             <div className="container">
                 <div className="text-center mb-lg">
-                    <h2>Planes Mágicos</h2>
-                    <p className="subtitle">Invierte en la creatividad de tus hijos.</p>
+                    <h2>Elige el plan perfecto para tu familia</h2>
+                    <p className="subtitle">Cancela cuando quieras, sin compromisos.</p>
 
                     <div className="toggle-container">
                         <span className={!annual ? 'active' : ''}>Mensual</span>
@@ -42,36 +42,45 @@ const Pricing = () => {
                         >
                             <div className="toggle-circle"></div>
                         </button>
-                        <span className={annual ? 'active' : ''}>Anual <span className="save-tag">-20%</span></span>
+                        <span className={annual ? 'active' : ''}>Anual <span className="save-tag">-20% + 2 meses gratis</span></span>
                     </div>
                 </div>
 
                 <div className="pricing-grid">
                     <PricingCard
-                        title="Explorador"
-                        price="0"
+                        title="Plan PRO"
+                        price={annual ? "7.99" : "9.99"}
                         period="mes"
                         features={[
-                            "1 Historia Gratis al día",
-                            "Ilustraciones básicas",
-                            "Acceso web"
+                            "Cuentos ilustrados ilimitados",
+                            "Biblioteca ilimitada",
+                            "10 cuentos nuevos/mes",
+                            "Personalización completa",
+                            "Selección de valores",
+                            "Adaptación por edad (3-10)"
                         ]}
-                        buttonText="Comenzar Gratis"
+                        buttonText="Comenzar Plan PRO"
                     />
                     <PricingCard
-                        title="Mago Supremo"
-                        price={annual ? "9.99" : "12.99"}
-                        period={annual ? "mes" : "mes"}
+                        title="Plan ULTRA"
+                        price={annual ? "11.99" : "14.99"}
+                        period="mes"
                         features={[
-                            "Historias Ilimitadas",
-                            "Ilustraciones HD y Estilos",
-                            "Narración de voz Premium",
-                            "Sin conexión (App móvil)",
-                            "Seguimiento de progreso"
+                            "Todo lo del Plan PRO",
+                            "Audiocuentos ilimitados",
+                            "Impresión PDF sin límite",
+                            "Historias con animación",
+                            "Acceso prioritario",
+                            "20 cuentos nuevos/mes",
+                            "Soporte 24/7"
                         ]}
                         highlighted={true}
-                        buttonText="Prueba Gratuita de 7 Días"
+                        buttonText="Comenzar Plan ULTRA"
                     />
+                </div>
+
+                <div className="pricing-guarantee text-center mt-lg">
+                    <p>✓ Cancela cuando quieras &nbsp; • &nbsp; ✓ Garantía de 30 días &nbsp; • &nbsp; ✓ Pago 100% seguro</p>
                 </div>
             </div>
         </section>

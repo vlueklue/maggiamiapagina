@@ -20,6 +20,23 @@
 .footer-brand p {
     color: #a0a0a0;
     line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.social-proof-badge {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.social-proof-badge p {
+    color: #FFD700;
+    /* Gold */
+    font-weight: 600;
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 .footer-links h4,
@@ -44,6 +61,7 @@
 
 .social-icons {
     display: flex;
+    align-items: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
 }

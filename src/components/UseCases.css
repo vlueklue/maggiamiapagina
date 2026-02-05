@@ -1,0 +1,40 @@
+.use-cases-section {
+    background: #fff;
+}
+
+.use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.case-card {
+    padding: 2rem;
+    border-radius: 20px;
+    background: #fcfcfc;
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.case-card:hover {
+    background: white;
+    box-shadow: var(--shadow-soft);
+    transform: translateY(-5px);
+}
+
+.case-emoji {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.case-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: var(--color-text-main);
+}
+
+.case-card p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

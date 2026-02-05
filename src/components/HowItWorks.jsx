@@ -27,24 +27,24 @@ const HowItWorks = () => {
                 <div className="steps-container">
                     <Step
                         number="1"
-                        title="Crea tu Perfil Mágico"
-                        description="Elige tu avatar y cuéntanos qué te gusta. ¡Dragones, espacio o dinosaurios!"
+                        title="Crea tu idea"
+                        description="Escribe lo que quieras contar o elige de nuestra biblioteca con cientos de historias listas para personalizar."
                     />
                     <Step
                         number="2"
-                        title="Elige un Tema"
-                        description="Selecciona una temática o deja que la varita mágica sorprenda a tu imaginación."
+                        title="Personaliza"
+                        description="Añade el nombre de tu hijo, su edad, apariencia y características especiales. Aquí es donde la magia comienza."
                         reverse={true}
                     />
                     <Step
                         number="3"
-                        title="Deja que la IA Cree"
-                        description="En segundos, generamos una historia única con ilustraciones increíbles solo para ti."
+                        title="Elige valores"
+                        description="Selecciona qué quieres que aprenda: valentía, amistad, honestidad, perseverancia... Tú decides el mensaje."
                     />
                     <Step
                         number="4"
-                        title="¡A Leer y Soñar!"
-                        description="Lee la historia, escucha la narración y completa divertidos quizzes al final."
+                        title="¡Disfruta!"
+                        description="En segundos tendrás un cuento ilustrado único. Léelo juntos, escúchalo como audiocuento o imprímelo."
                         reverse={true}
                     />
                 </div>
