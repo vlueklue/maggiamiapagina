@@ -1,24 +1,23 @@
+.pricing {
+    background: linear-gradient(180deg, #fff 0%, #f3f0ff 100%);
+}
+
 .toggle-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
-    font-weight: 600;
-    color: var(--color-text-light);
+    margin-top: 1.5rem;
+    font-weight: 500;
 }
 
 .toggle-btn {
     width: 60px;
     height: 32px;
-    background: #dbdbdb;
+    background: var(--color-primary);
     border-radius: 50px;
     position: relative;
-    transition: all 0.3s ease;
-}
-
-.toggle-btn.active {
-    background: var(--color-secondary);
+    transition: background 0.3s ease;
 }
 
 .toggle-circle {
@@ -29,106 +28,89 @@
     position: absolute;
     top: 3px;
     left: 3px;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: transform 0.3s ease;
 }
 
 .toggle-btn.active .toggle-circle {
-    left: 31px;
+    transform: translateX(28px);
 }
 
 .toggle-container span.active {
     color: var(--color-text-main);
+    font-weight: 700;
 }
 
 .save-tag {
     background: var(--color-highlight);
-    color: #b5a500;
+    color: var(--color-text-main);
     font-size: 0.75rem;
     padding: 0.2rem 0.5rem;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-left: 0.5rem;
+    font-weight: 700;
 }
 
 .pricing-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 3rem auto;
 }
 
 .pricing-card {
     background: white;
-    padding: 3rem;
     border-radius: 20px;
-    box-shadow: var(--shadow-soft);
-    width: 350px;
+    padding: 2.5rem;
+    border: 1px solid #e0e0e0;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    transition: transform 0.3s ease;
 }
 
 .pricing-card.highlighted {
     border: 2px solid var(--color-secondary);
+    box-shadow: 0 10px 40px rgba(160, 196, 255, 0.2);
     transform: scale(1.05);
-    box-shadow: var(--shadow-card);
-}
-
-.popular-tag {
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--color-secondary);
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 0.9rem;
+    z-index: 1;
 }
 
 .pricing-card h3 {
-    margin-bottom: 1rem;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .price {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 800;
     color: var(--color-text-main);
+    display: flex;
+    align-items: baseline;
     margin-bottom: 2rem;
-    font-family: var(--font-heading);
 }
 
 .currency {
     font-size: 1.5rem;
     vertical-align: top;
-    margin-top: 0.5rem;
-    display: inline-block;
 }
 
 .period {
     font-size: 1rem;
     color: var(--color-text-light);
     font-weight: 400;
+    margin-left: 0.5rem;
 }
 
-.pricing-features {
-    list-style: none;
+.features-list {
     margin-bottom: 2.5rem;
-    flex: 1;
+    text-align: left;
 }
 
-.pricing-features li {
-    margin-bottom: 1rem;
+.features-list li {
+    margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
     gap: 0.8rem;
     color: var(--color-text-light);
-}
-
-.check-icon {
-    color: var(--color-secondary);
-    flex-shrink: 0;
 }
 
 .btn-pricing {
@@ -136,27 +118,26 @@
     padding: 1rem;
     border-radius: 12px;
     font-weight: 600;
-    font-size: 1.1rem;
+    background: #f0f0f0;
+    color: var(--color-text-main);
     transition: all 0.3s ease;
 }
 
-.btn-highlight {
+.pricing-card.highlighted .btn-pricing {
     background: var(--color-text-main);
     color: white;
 }
 
-.btn-highlight:hover {
-    background: var(--color-secondary);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.btn-pricing:hover {
+    background: var(--color-primary);
+    color: white;
 }
 
-.btn-outline {
-    background: transparent;
-    border: 2px solid #e9ecef;
-    color: var(--color-text-main);
-}
-
-.btn-outline:hover {
-    border-color: var(--color-text-main);
+.pricing-guarantee {
+    margin-top: 5rem !important;
+    /* Increased spacing as requested */
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 1.1rem;
+    color: var(--color-text-light);
 }

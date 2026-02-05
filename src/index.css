@@ -2,20 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@300;400;700;900&display=swap');
 
 :root {
-  /* Pastel Palette */
-  --color-primary: #a0c4ff;
-  /* Soft Blue */
-  --color-secondary: #bdb2ff;
-  /* Soft Lilac */
-  --color-accent: #ffc6ff;
-  /* Soft Pink */
-  --color-highlight: #fdffb6;
-  /* Soft Yellow */
-  --color-text-main: #2d3142;
-  /* Darker Slate */
-  --color-text-light: #4f5d75;
+  /* Purple & Lilac Palette */
+  --color-primary: #9b5de5;
+  /* Vibrant Purple */
+  --color-secondary: #c084fc;
+  /* Lilac */
+  --color-accent: #f15bb5;
+  /* Pink/Magenta Accent */
+  --color-highlight: #fee440;
+  /* Warm Yellow */
+  --color-text-main: #240046;
+  /* Deep Purple Black */
+  --color-text-light: #5a189a;
+  /* Medium Purple text */
   --color-white: #ffffff;
-  --color-glass: rgba(255, 255, 255, 0.7);
+  --color-glass: rgba(255, 255, 255, 0.85);
 
   /* Fonts */
   --font-heading: 'Merriweather', serif;
