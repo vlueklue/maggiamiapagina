@@ -8,7 +8,6 @@ import UseCases from './components/UseCases'
 import Testimonials from './components/Testimonials'
 import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
-import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
       <Testimonials />
       <Pricing />
       <FAQ />
-      <FinalCTA />
       <Footer />
     </div>
   )

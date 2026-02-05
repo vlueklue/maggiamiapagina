@@ -1,44 +1,74 @@
 .use-cases-section {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)), url('../assets/use-cases-bg.jpg');
+    background: url('../assets/use-cases-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    padding: 6rem 0;
 }
 
 .use-cases-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .case-card {
-    padding: 2rem;
-    border-radius: 20px;
-    background: #fcfcfc;
-    border: 1px solid #f0f0f0;
-    transition: all 0.3s ease;
+    padding: 2.5rem;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    /* High opacity for readability against space bg */
+    backdrop-filter: blur(5px);
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Magical border effect on hover */
+.case-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    padding: 3px;
+    background: linear-gradient(45deg, #c084fc, #f15bb5, #fee440);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 .case-card:hover {
-    background: white;
-    box-shadow: var(--shadow-soft);
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.02);
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(155, 93, 229, 0.3);
+}
+
+.case-card:hover::after {
+    opacity: 1;
 }
 
 .case-emoji {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .case-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--color-text-main);
+    font-weight: 700;
 }
 
 .case-card p {
     color: var(--color-text-light);
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }

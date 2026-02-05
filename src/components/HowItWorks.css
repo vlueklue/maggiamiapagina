@@ -1,9 +1,16 @@
 .how-it-works {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)), url('../assets/how-it-works-bg.jpg');
+    background: url('../assets/how-it-works-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    z-index: 1;
+}
+
+/* Add a semi-transparent white layer behind content ONLY, not the whole image */
+.how-it-works::after {
+    display: none;
+    /* No global overlay */
 }
 
 .steps-grid {
