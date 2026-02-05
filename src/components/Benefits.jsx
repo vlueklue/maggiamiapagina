@@ -50,6 +50,13 @@ const Benefits = () => {
                         <strong>Dato destacado:</strong> Los niños que leen cuentos personalizados muestran un <strong>85% más de atención</strong> y retienen información por más tiempo. Se convierten en lectores entusiastas.
                     </p>
                 </div>
+
+                <div className="benefit-callout problem-context" style={{ marginTop: '2rem', background: '#fff0f3', borderLeftColor: '#ff4d6d' }}>
+                    <h4 style={{ marginBottom: '1rem', color: '#590d22', fontSize: '1.2rem' }}>¿Te suena familiar?</h4>
+                    <p>
+                        Tu pequeño prefiere las pantallas a los libros... No estás solo. <strong>El 67% de los niños</strong> ha perdido el interés por la lectura tradicional. MaggiaMia existe para cambiar esto.
+                    </p>
+                </div>
             </div>
         </section>
     );

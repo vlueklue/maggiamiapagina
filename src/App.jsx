@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Problem from './components/Problem'
 import Solution from './components/Solution'
 import HowItWorks from './components/HowItWorks'
 import Features from './components/Features'
@@ -18,7 +17,6 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <Problem />
       <Solution />
       <HowItWorks />
       <Features />

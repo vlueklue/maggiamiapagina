@@ -18,22 +18,22 @@ const TestimonialCard = ({ name, role, quote }) => (
 const Testimonials = () => {
     const reviews = [
         {
-            name: "Pili González",
+            name: "Laura Martínez",
             role: "Mamá de Lucas, 5 años",
             quote: "A mi peque no le enganchaban los libros, y con MaggiaMia fue un cambio total. Como puede ser el protagonista, ahora quiere leer todos los días. ¡Es mágico!"
         },
         {
-            name: "Marta Herráiz",
+            name: "Carmen Rodríguez",
             role: "Mamá de Emma, 7 años",
             quote: "Nos ha ayudado a hablar de emociones, miedos, incluso del primer día de cole. Es como tener una excusa bonita para abrir temas importantes sin forzar."
         },
         {
-            name: "David Bouzas",
+            name: "Carlos Díaz",
             role: "Papá de Sofía, 4 años",
             quote: "Lo mejor es que cada uno elige su propia idea y MaggiaMia la convierte en un cuento único. Siempre acabamos riéndonos y hablando de algo."
         },
         {
-            name: "Ana Pascual",
+            name: "Elena Torres",
             role: "Mamá de Hugo, 6 años",
             quote: "Ya forma parte de nuestra rutina: elegimos el cuento, lo escuchamos abrazados y a veces lo seguimos inventando juntos."
         }
